@@ -50,7 +50,9 @@ public class TerminalOperations {
         List<Integer> numbers3 = Arrays.asList(5, 2, 8, 1, 9);
         Optional<Integer> minNumber = numbers3.stream().min(Integer::compare);
 
-        System.out.println(minNumber);
+        if(minNumber.isPresent()){
+            System.out.println(minNumber.get());
+        }
 
         List<Integer> numbers4 = Arrays.asList(5, 2, 8, 1, 9);
         Optional<Integer> maxNumber = numbers4.stream().max(Integer::compare);
