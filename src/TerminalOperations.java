@@ -57,16 +57,22 @@ public class TerminalOperations {
         List<Integer> numbers4 = Arrays.asList(5, 2, 8, 1, 9);
         Optional<Integer> maxNumber = numbers4.stream().max(Integer::compare);
 
-        System.out.println(maxNumber);
+        if(maxNumber.isPresent()){
+            System.out.println(maxNumber.get());
+        }
 
         List<String> strings2 = Arrays.asList("apple", "banana", "cherry");
         Optional<String> firstString = strings2.stream().findFirst();
 
-        System.out.println(firstString);
+        if(firstString.isPresent()){
+            System.out.println(firstString.get());
+        }
 
         Optional<String> anyString = strings2.stream().findAny();
 
-        System.out.println(anyString);
+        if(anyString.isPresent()){
+            System.out.println(anyString.get());
+        }
 
         boolean anyEvenNumber = numbers.stream().anyMatch(n -> n % 2 == 0);
 
