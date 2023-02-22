@@ -6,7 +6,7 @@ public class InstanceInitializationBlock {
     static {
         System.out.println("static");
     }
-    InstanceInitializationBlock(){
+    public InstanceInitializationBlock(){
         this.x=0;
         System.out.println(x);
         System.out.println("constructor");

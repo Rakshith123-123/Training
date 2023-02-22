@@ -13,16 +13,22 @@ public class LocalClasses {
 
         class PhoneNumber {
 
-            String formattedPhoneNumber = null;
+            public String formattedPhoneNumber = null;
 
-            PhoneNumber(String phoneNumber){
+            PhoneNumber(String phoneNumber) {
 //                numberLength = 7;
-                String currentNumber = phoneNumber.replaceAll(
-                        regularExpression, "");
-                if (currentNumber.length() == numberLength)
-                    formattedPhoneNumber = currentNumber;
-                else
-                    formattedPhoneNumber = null;
+                if (phoneNumber != null) {
+                    String currentNumber = phoneNumber.replaceAll(
+                            regularExpression, "");
+                    if (currentNumber.length() == numberLength) {
+                        formattedPhoneNumber = currentNumber;
+                    }else {
+                        formattedPhoneNumber = null;
+                    }
+                }else{
+                    phoneNumber="";
+                    System.out.println("First number is null object,check properly");
+                }
             }
 
             public String getNumber() {
@@ -56,6 +62,8 @@ public class LocalClasses {
     }
 
     public static void main(String... args) {
-        validatePhoneNumber("123-456-7890", "456-7890");
+
+        validatePhoneNumber(null, "456-7890  ");
+
     }
 }
