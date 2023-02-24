@@ -35,6 +35,8 @@ public class Main {
         System.out.println("Human objects converted from Student objects:");
         System.out.println(humanList);
 
-
+        ImmutableClass immutableClass = new ImmutableClass();
+        int age=immutableClass.getAge();
+        System.out.println(age);
     }
 }

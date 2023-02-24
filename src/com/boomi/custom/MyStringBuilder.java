@@ -63,7 +63,6 @@ public class MyStringBuilder {
         int len = end - start;
         if (len > 0) {
             for (int i = start; i < count-len; i++) {
-                System.out.println("delete");
                 value[i] = value[i + len];
             }
             count -= len;

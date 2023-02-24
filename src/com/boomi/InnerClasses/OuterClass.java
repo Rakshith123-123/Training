@@ -4,7 +4,7 @@ import com.boomi.InnerClasses.TopLevelClass;
 
 public class OuterClass {
 
-    String outerField = "Outer field";
+    public String outerField = "Outer field";
     static String staticOuterField = "Static outer field";
 
     public void greetInEnglish() {
