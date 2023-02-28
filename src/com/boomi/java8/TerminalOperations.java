@@ -29,7 +29,7 @@ public class TerminalOperations {
         System.out.println(sum);
 
         List<String> strings = Arrays.asList("pwc", "dell", "boomi");
-        strings.stream().forEach(s -> System.out.println());
+        strings.stream().forEach(s -> System.out.println(s));
 
         List<Integer> numbers1 = Arrays.asList(1, 2, 3, 4, 5, 6);
         Integer[] evenNumbersArray = numbers1.stream()
