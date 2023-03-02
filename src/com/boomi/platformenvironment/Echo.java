@@ -5,7 +5,6 @@ public class Echo {
         for (String s: args) {
             System.out.println(s);
         }
-
         int firstArg;   // if the args is numeric value
         if (args.length > 0) {
             try {
