@@ -61,7 +61,7 @@ public class OuterClass {
         System.out.println("Inner class:");
         System.out.println("------------");
         OuterClass outerObject = new OuterClass();
-        OuterClass.InnerClass innerObject = outerObject.new InnerClass();
+        InnerClass innerObject = outerObject.new InnerClass();
         innerObject.accessMembers();
 
         System.out.println("\nStatic nested class:");

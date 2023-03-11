@@ -45,6 +45,10 @@ public class Student {
         this.percentage = percentage;
     }
 
+    public boolean hasPassed(){
+        return percentage >= 40;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
