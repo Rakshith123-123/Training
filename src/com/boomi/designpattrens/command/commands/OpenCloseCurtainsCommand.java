@@ -2,7 +2,13 @@ package com.boomi.designpattrens.command.commands;
 
 import com.boomi.designpattrens.command.components.Curtains;
 
-public record OpenCloseCurtainsCommand(Curtains curtains) implements Command {
+public class OpenCloseCurtainsCommand implements Command {
+
+    private Curtains curtains;
+
+    public OpenCloseCurtainsCommand(Curtains curtains){
+        this.curtains=curtains;
+    }
 
     @Override
     public void execute() {

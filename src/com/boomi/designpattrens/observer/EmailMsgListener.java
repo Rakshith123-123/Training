@@ -1,6 +1,12 @@
 package com.boomi.designpattrens.observer;
 
-public record EmailMsgListener(String email) implements Listener {
+public class EmailMsgListener implements Listener {
+
+    public String email;
+
+    public EmailMsgListener(String email) {
+        this.email=email;
+    }
 
     @Override
     public void update(Event eventType) {

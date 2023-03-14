@@ -1,6 +1,12 @@
 package com.boomi.designpattrens.observer;
 
-public record MobileAppListener(String username) implements Listener {
+public class MobileAppListener implements Listener {
+
+    public String username;
+
+    public MobileAppListener(String username) {
+        this.username=username;
+    }
 
     @Override
     public void update(Event eventType) {
