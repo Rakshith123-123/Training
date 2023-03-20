@@ -1,16 +1,18 @@
 package com.boomi.jaxb;
+
+
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name="Employee")
 public class Employee {
-    @XmlElement
+    @XmlElement(name="name")
     String name;
-    @XmlElement
+    @XmlElement(name="address")
     String address;
-    @XmlElement
+    @XmlElement(name="id")
     int id;
-    @XmlElement
+    @XmlElement(name="salary")
     int salary;
 
 

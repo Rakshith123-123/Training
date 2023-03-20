@@ -1,6 +1,7 @@
 package com.boomi.jaxb;
-
-import javax.xml.bind.*;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 import java.io.File;
 import java.io.StringWriter;
 
